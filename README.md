@@ -61,7 +61,7 @@ ts-node scripts/morph.ts "New Name" "TICK" "https://example.com/meta.json"
 
 ## Morph rules (on-chain enforced)
 
-- Burn amount: `supply / 10000`, recalculated at call time — burns shrink as supply shrinks
+- Burn amount: `supply / 1000`, recalculated at call time — burns shrink as supply shrinks
 - Caller must hold ≥ the burn amount
 - `name` ≤ 32 chars, `symbol` ≤ 10 chars, `uri` ≤ 200 chars (Metaplex limits)
 - Optional cooldown between morphs (`MORPH_COOLDOWN_SECONDS` in `lib.rs`, default 0 = disabled)
